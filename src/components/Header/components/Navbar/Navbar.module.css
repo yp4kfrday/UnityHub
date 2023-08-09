@@ -1,0 +1,27 @@
+.header__nav ul {
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav ul li {
+  position: relative;
+}
+
+.header__nav ul li a {
+  position: relative;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-left: 5px;
+  color: var(--color-text);
+  margin-left: 5px;
+}
+
+.header__nav ul li a.active {
+  color: var(--color-text-secondary);
+  border-radius: 15px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+}
+

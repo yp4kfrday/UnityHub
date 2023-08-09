@@ -1,0 +1,70 @@
+.form {
+    align-items: center;
+    justify-content: center;
+}
+
+.input__auth,
+.button__auth {
+    font-size: 16px;
+}
+
+.input__label {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 2px;
+    color: var(--color-text-tertiary);
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.input__auth {
+    width: 100%;
+    padding: 0 0 20px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0; 
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    color: #e0e0e0;
+}
+
+.input__auth:focus {
+    border-bottom: 1px solid var(--color-outline);
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.button__auth {
+    padding: 10px 60px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-bg);
+    background-color:var(--color-text);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px
+}
+
+.button__auth:focus,
+.button__auth:hover{
+    background-color: var(--color-outline);
+    color: var(--color-text);
+}
+
+.input__auth:focus ~ .input__label,
+.input__auth:not(:placeholder-shown) ~ .input__label{
+    top: -18px;
+    font-size: 14px;
+    color: var(--color-outline);
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+}

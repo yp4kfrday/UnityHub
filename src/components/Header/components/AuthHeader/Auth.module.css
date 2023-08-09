@@ -1,0 +1,17 @@
+.header__auth {
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+.header__auth ul li a {
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.header__nav li:hover{
+  color: var(--color-text-secondary);
+}
