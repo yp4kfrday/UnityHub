@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { SignUp } from '../../components/Auth'
+import { Todo } from '../../components/Todo'
 
 const RegisterPage = () => {
   return (
@@ -9,6 +10,7 @@ const RegisterPage = () => {
         <p>
             Already have an account <Link to='/login'>Sign in</Link>
         </p>
+        <Todo />
     </div>
   )
 }

@@ -5,9 +5,9 @@ import todoReducer from './slices/todoSlices'
 export const store = configureStore({
     reducer: {
         user: userReducer,
-        todo: todoReducer
+        todos: todoReducer
     }
 });
 
 export type AppDispatch = typeof store.dispatch;
-export type RootState = ReturnType<typeof store.getState>;
+export type RootState = ReturnType<typeof store.getState>; 
